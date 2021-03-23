@@ -15,7 +15,7 @@ namespace OOP_cv7
             T currentLargest = objects[0];
             for (int i = 0; i < objects.Length - 1; i++)
             {
-                if (objects[i + 1].CompareTo(objects[i]) > 0) currentLargest = objects[i + 1];
+                if (objects[i + 1].CompareTo(currentLargest) > 0) currentLargest = objects[i + 1];
             }
 
             return currentLargest;
@@ -27,7 +27,7 @@ namespace OOP_cv7
             T currentSmallest = objects[0];
             for (int i = 0; i < objects.Length - 1; i++)
             {
-                if (objects[i + 1].CompareTo(objects[i]) < 0) currentSmallest = objects[i + 1];
+                if (objects[i + 1].CompareTo(currentSmallest) < 0) currentSmallest = objects[i + 1];
             }
 
             return currentSmallest;

@@ -20,7 +20,7 @@ namespace OOP_cv7
         }
         public override string ToString()
         {
-            return String.Format("Rectangle ({0} x {0})", SideLength);
+            return String.Format("Square ({0} x {0})", SideLength);
         }
     }
 }
