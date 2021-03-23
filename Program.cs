@@ -43,8 +43,8 @@ namespace OOP_cv7
             Console.WriteLine("Largest 2D object: {0}", Extremes.Largest<Object2D>(objects2D).ToString());
             Console.WriteLine("Smallest 2D object: {0}", Extremes.Smallest<Object2D>(objects2D).ToString());
             Console.WriteLine();
-            Console.WriteLine("Filtered integers using LINQ:");
-            foreach(int i in integers.Where(c => c >= 4 && c <= 8)) Console.Write("{0} ", i);
+            Console.Write("Filtered integers using LINQ:");
+            foreach(int i in integers.Where(c => c >= 4 && c <= 8)) Console.Write(" {0}", i);
             Console.WriteLine();
         }
     }

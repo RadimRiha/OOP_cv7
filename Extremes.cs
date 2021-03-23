@@ -13,9 +13,9 @@ namespace OOP_cv7
             if (objects.Length == 0) throw new Exception("Cannot find greatest member in an empty array");
 
             T currentLargest = objects[0];
-            for (int i = 0; i < objects.Length - 1; i++)
+            for (int i = 1; i < objects.Length; i++)
             {
-                if (objects[i + 1].CompareTo(currentLargest) > 0) currentLargest = objects[i + 1];
+                if (objects[i].CompareTo(currentLargest) > 0) currentLargest = objects[i];
             }
 
             return currentLargest;
@@ -25,9 +25,9 @@ namespace OOP_cv7
             if (objects.Length == 0) throw new Exception("Cannot find greatest member in an empty array");
 
             T currentSmallest = objects[0];
-            for (int i = 0; i < objects.Length - 1; i++)
+            for (int i = 1; i < objects.Length; i++)
             {
-                if (objects[i + 1].CompareTo(currentSmallest) < 0) currentSmallest = objects[i + 1];
+                if (objects[i].CompareTo(currentSmallest) < 0) currentSmallest = objects[i];
             }
 
             return currentSmallest;
